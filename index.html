@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainApp">
+      <div class="header">
+        <h1 class="legend">Учет моих расходов</h1>
+      </div>
+      <div class="controls">
+        <div class="place">
+          <div class="place_legend">Куда было потрачено</div>
+          <input
+            type="text"
+            name=""
+            id="place"
+            class="place_input"
+            placeholder="Введите место"
+            autofocus
+          />
+        </div>
+        <div class="money">
+          <div class="money_legend">Сколько было потрачено</div>
+          <input
+            type="number"
+            name=""
+            id="money"
+            class="money_input"
+            placeholder="Введите сумму"
+          />
+        </div>
+        <div class="btn_block">
+          <button class="btn" id="addButton">Добавить</button>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total_money" id="total">Итого: 0 р</div>
+      </div>
+      <div class="card_box">
+        <div class="cards" id="cards"></div>
+      </div>
+    </div>
+    <script src="scrypt.js"></script>
+  </body>
+</html>

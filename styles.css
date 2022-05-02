@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mainApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  min-height: 600px;
+  padding: 20px;
+  background-color: #65757f;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 15px ;
+  font-size: 12px;
+  color: #252729;
+}
+
+.money {
+  width: 28%;
+}
+
+.money_input {
+height: 30px;
+width: 100%;
+border-radius: 3px;
+border: none;
+}
+
+.place {
+  width: 48%;
+}
+
+.place_input {
+  height: 30px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn_block {
+display: flex;
+flex-direction: column-reverse;
+}
+
+.btn {
+  outline: none;
+  height: 36px;
+  width: 90px;
+  border: 0px;
+  background-color: rgba(0, 128, 0, 0.363);
+}
+
+.btn:hover {
+  background-color: rgba(0, 128, 0, 0.719);
+}
+
+.btn:active {
+  background-color: rgb(0, 128, 0);
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.card_box {
+  overflow: auto;
+  width: 90%;
+  height: 350px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+.card_box::-webkit-scrollbar {
+  width: 4px;
+  background-color: none;
+}
+
+.card_box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #18aa66;
+}
+
+.card_box::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: none;
+}
+
+.card {
+  display: flex;  
+  min-height: 25px;
+  padding: 0px 5px;
+  margin-bottom: 10px;
+}
+
+.card_num {
+  min-width: 5%
+}
+
+.shop_name {
+  width: 45%;
+  word-wrap: break-word;
+}
+
+.info_block {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.time {
+  min-width: 40%;
+}
+
+.spend_money {
+  min-width: 30%;
+  word-wrap: break-word
+}
+
+.buttons {
+  min-width: 30%;
+  display: flex;
+}
+
+.editBut,
+.trashBut,
+.okBut,
+.disBut{
+  width: 23px;
+  height: 23px;  
+}
+
+.editBut {
+  background-image: url(edit.png);
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.trashBut {
+  background-image: url(trash.png);
+  background-size: cover;
+}
+
+.shop_name-edit {
+  width: 90%;
+  height: 65%;
+}
+
+.time-edit {
+  width: 90%;
+  height: 80%;
+  font-size: 10px;
+  
+}
+
+.money-edit {
+  width: 80%;
+  height: 65%;  
+}
+
+.okBut {
+  background-image: url(ok.png);
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.disBut {
+  background-image: url(dis.png);
+  background-size: cover;
+}
+
+@media (max-width:680px) {
+  .mainApp {
+    min-width: 0px;
+    width: 270px;
+    padding: 2px;
+  }
+
+  .header {
+    font-size: 12px;
+  }
+
+  .controls {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .place,
+  .money {
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .btn_block {
+    margin-left: 55%;
+  }
+
+  .btn {
+    height: 25px;
+  }
+
+  .total {
+    font-size: 15px;
+  }
+
+  .info_block {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .shop_name {
+    width: 40%;
+  }
+
+  .card {
+    font-size: 13px;
+  }
+
+  .card_num {
+    margin-right: 5px;
+  }
+}
